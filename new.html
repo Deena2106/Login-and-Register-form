@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and LogI in form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="new_style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form">
+            <div class = "button">
+                <div id="color"></div>
+                <button type="button" class="regi" onclick="registration()">Register</button>
+                <button type="button" class="regi" onclick="log_in()">Log In</button>
+            </div>
+            <form id="login" class="input-element2">
+                <div class="input-container">
+                    <i style="font-size: 20px;" class="fa fa-envelope icon"></i>
+                    <input type="email" class="input-field"  placeholder="Email@gmail.com" required>
+                </div>
+                <div style="display: flex;" class="input-container">
+                    <i style="font-size: 20px;" class="fa fa-key icon"></i>
+                    <input type="password" class="input-field" placeholder="password"  required>
+                </div>
+                <button type="submit" class="submit">Log In</button>
+            </form>
+             <form id="register" class="input-element">
+                <div class="input-container">
+                    <i style="font-size: 20px;" class="fa fa-user icon"></i>
+                    <input type="text" class="input-field" placeholder="User name" required>
+                </div>
+                <div class="input-container">
+                    <i style="font-size: 20px;" class="fa fa-envelope icon"></i>
+                    <input type="email" class="input-field" placeholder="Email@gmail.com" required>
+                </div>
+                <div class="input-container">
+                    <i style="font-size: 20px;" class="fa fa-key icon"></i>
+                    <input type="password" class="input-field" placeholder="password" required>
+                </div>
+                <div class="input-container">
+                    <i style="font-size: 20px;" class="fa fa-phone icon"></i>
+                    <input type="text" class="input-field" placeholder="Phone Number" required>
+                </div>
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var a = document.getElementById("register");
+        var b = document.getElementById("login");
+        var c = document.getElementById("button");
+        var d = document.getElementById("color");
+        function log_in(){
+            d.style.left="110px";
+            a.style.left="-400px";
+            b.style.left= "50px";
+            c.style.left="110px";
+        }
+        function registration(){
+            d.style.left="0";
+            a.style.left="50px";
+            b .style.left= "450px";
+            c.style.left="0";
+        }
+    </script>
+</body>
+</html>
